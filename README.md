@@ -23,7 +23,6 @@ Slide show of pictures ( I will send later)
     * A form where they can send me an email similar to this one → http://www.cottoncandyweddings.co.uk/contact-us/
     * Links to Instagram  ( jmphotography_orlando ) , Facebook (https://facebook.com/JMphotography.Orlando/)
   - Reviews
-    *
 
 5. These are examples of the style I’m thinking of for the page:
 (I like the vintage, rustic, girly type of style)
