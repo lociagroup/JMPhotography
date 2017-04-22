@@ -1,36 +1,61 @@
 ﻿<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>JM Photography</title>
+	<title>JMPhotography</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Handlee">
+	<!-- Favicon for different devices -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Spirax|Pacifico|Open+Sans+Condensed:light|Raleway|Josefin+Slab|Dancing+Script">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 </head>
 
 <body>
 
 	<style>
+		.bannerh1{
+			font-family: 'Josefin Slab', cursive;
+			color: #f5a5a7;/*#ed786a;*/
+		}
 		h1,
 		h2,
 		h3,
 		h4 {
-			font-family: 'Handlee', cursive;
-			color: #ed786a;
+			font-family: 'Pacifico','Lobster', cursive;
+			color: #f5a5a7;/*#ed786a;*/
 		}
-		
+
 		body {
-			font-family: 'Pacifico', sans-serif;
+			font-family: 'Open Sans Condensed',sans-serif;
+			color: #504f4d; /*black;*/
+			background-color: #fbf9f5;
+		}
+		.major{
+			font-family:'Dancing Script',cursive;
 		}
 		.content {
-				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f4d8d4' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 		}
 		.col-lg-4 p {
 		margin-right: .75rem;
@@ -40,17 +65,72 @@
 		margin-bottom: 1.5rem;
 		text-align: center;
 		}
+
+		.navbar {
+			background-color: #f5a5a7;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f4d8d4' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+			}
+			div.center{
+				display: table;
+			}
+			ul{
+				text-align: left;
+			}
 	</style>
+
+	<nav class="navbar fixed-top navbar-toggleable-md navbar-light">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+					<li class="nav-item">
+		        <a class="nav-link" href="#">Home</a>
+		      </li>
+
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Services
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="#babymaternity">Baby/Maternity</a>
+		          <a class="dropdown-item" href="#singleportrait">Single Portraits</a>
+		          <a class="dropdown-item" href="#engagementcouple">Couples/Engagement/Weddings</a>
+							<a class="dropdown-item" href="#familypets">Family/Pets</a>
+							<a class="dropdown-item" href="#realestate">Real-Estate</a>
+							<a class="dropdown-item" href="#events">Events</a>
+							
+					 </div>
+		      </li>
+
+					<li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+
+					<li class="nav-item">
+		        <a class="nav-link" href="#reviews">Testimonials</a>
+		      </li>
+
+					<li class="nav-item">
+		        <a class="nav-link" href="#contact">Contact</a>
+		      </li>
+			<li class="nav-item">
+		        <a class="nav-link" href="#gallery">Gallery</a>
+		      </li>
+		    </ul>
+	  	</div>
+	</nav>
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
 		<!-- Banner -->
 		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
-				<h1>JM Photography</h1>
-				<p class="major">And whatever you do, do it heartily, as to the Lord and not to men… Colossians 3:23</p>
+				<h1 class="bannerh1">JMPhotography</h1>
+				</br>
+				<p class="major" >And whatever you do, do it heartily, as to the Lord and not to men… Colossians 3:23</p>
 				<ul class="actions vertical">
-					<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+					<img src="images/rustic01.png" alt="" />
 				</ul>
 			</div>
 			<div class="image">
@@ -58,7 +138,25 @@
 			</div>
 		</section>
 
-	
+
+		<!-- About ME -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+			<div class="content" id="about">
+				<h2>About Me</h2>
+				<p>
+					Hi! I’m super excited that you’re reading this right now because that means you have interest in the person behind the lens, which is super important! Excellent photos are taken when there is a comfortable and natural atmosphere and this is exactly what I aim for as your photographer. I like to get to know a little about my clients and build a connection so I can capture your exact photography needs. The name given to me was Jessica Montes, but I go by Jess or Montes! I’m Colombian, born in New Jersey but grown a Florida girl! I’m a nature enthusiast, adventure seeker, musician, photographer and artist. I graduated from the University of Central Florida in 2014 and currently working at a children’s hospital in central Florida. My passion in art and photography has been there ever since I can remember but the drive and motivation began when I purchased my first DSLR in 2010. I’ve been photographing ever since. I have experience in pretty much everything but I specialize in family and children. If there is anything else you would like to know about me feel free to contact me!
+				</p>
+				<p>
+					At JMphotography we believe in affordable photography. We believe you shouldn’t have to break the bank to keep a memory alive. We guarantee that you will not find more affordable prices for the excellent quantity and quality of photos that we provide. Fixed prices, no hidden fees, just a bunch of good ole pictures to keep.
+				</p>
+				<ul class="actions vertical">
+					<li><a href="#contact" class="button">Get in Touch</a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight01.jpg" alt="" />
+			</div>
+		</section>
 
 		<!-- Baby -->
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
@@ -72,8 +170,34 @@
 				<p>For Newborn photography we urge parents to come in early. Full term babies can come in as early as 10 days. They are
 					easier to position and a lot easier to photograph within the first 3 weeks of birth. We will schedule at a time that
 					is most convenient to accommodate feeding and nap times.</p>
+
+				</br>
+
+				<h3>Things To Bring </h3>
+				<p>A couple things you may want to bring to your shoot are (Optional): </p>
+				<ul>
+					<li>Yourself</li>
+					<li>Your spouse/baby/siblings</li>
+					<li>Manicured/clean hands (lots of photos with them)</li>
+					<li>Sonogram</li>
+					<li>Pair of baby shoes or a child story book, etc.</li>
+					<li>Something meaningful to you/spouse girly (like a bow) or something boyish (like a football) </li>
+					<li>Your wedding bands (if any)</li>
+					<li>An extra outfit or 2 (flowy dresses always look beautiful)</li>
+					<li>Hair</li>
+					<li>Flower</li>
+					<li>Crown</li>
+					<li>Water bottles/snacks/comfortable clothes for later</li>
+					<li>CONFIDENCE!</li>
+				</ul>
+
+				<h3>Investment</h3>
+				<ul>
+					<li>Maternity: $ 120 (outdoor) $140 (indoor)</li>
+					<li>Newborn: $ 100 (outdoor) $120 (indoor)</li>
+				</ul>
 				<ul class="actions vertical">
-					<li><a href="#pricing" class="button">Pricing</a></li>
+					<li><a href="#moreinfo" class="button">Learn More</a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -89,9 +213,12 @@
 					birthday.. etc) or just feeling pretty JMphotography is the perfect place to go! With experience in modeling, I can
 					assure you that the shoot will go very smooth. If you don’t have too much experience standing in front of the camera
 					JMphotography will be more than happy to guide you. Remember confidence is key!</p>
-				<ul class="actions vertical">
-					<li><a href="#pricing" class="button">Pricing</a></li>
-				</ul>
+				</br>
+				<h3>Investment</h3>
+				<p>$100 (outdoor) $140 (indoor)</p>
+					<ul class="actions vertical">
+						<li><a href="#moreinfo" class="button">Learn More</a></li>
+					</ul>
 			</div>
 			<div class="image">
 				<img src="images/spotlight03.jpg" alt="" />
@@ -106,14 +233,17 @@
 					save the date, anniversary, elopement, valentines or just feeling like love birds, JMphotography is the perfect photographer
 					to call. My goal is to capture the love, the emotion and intimacy that naturally lie between the two of you.</p>
 				<blockquote>
-					<h4>Side note:</h4>A lot of couples may ask what to wear. I believe this choice is entirely up to you, but a few suggestions
+					<h4>What to wear:</h4>A lot of couples may ask what to wear. I believe this choice is entirely up to you, but a few suggestions
 					of mine will be that you choose something to match your personality and something you will feel comfortable and confident
 					in (Confidence is key!). In my opinion pastel colors, which are complimenting with your partners wardrobe, look great.
 					You may also want to keep the weather/season in mind.
 				</blockquote>
-				<ul class="actions vertical">
-					<li><a href="#pricing" class="button">Pricing</a></li>
-				</ul>
+			</br>
+				<h3>Investment</h3>
+				<p>$150 for a family up to 5 $10 for each added individual</p>
+					<ul class="actions vertical">
+						<li><a href="#moreinfo" class="button">Learn More</a></li>
+					</ul>
 			</div>
 			<div class="image">
 				<img src="images/spotlight04.jpg" alt="" />
@@ -128,16 +258,90 @@
 					more beautiful than capturing the chemistry between family members. My goal is to photograph you from afar during your
 					family’s most natural state to capture this true chemistry.</p>
 				<blockquote>
-					<h4>Side note:</h4> Several clients will ask what to wear. I believe this choice is entirely up to you, but a few suggestions
+					<h4>What to wear:</h4> Several clients will ask what to wear. I believe this choice is entirely up to you, but a few suggestions
 					of mine will be that you choose something to match your family’s personality and something you will all feel comfortable
 					and confident in (Confidence is key!). In my opinion pastel colors, which are complimenting with your partners wardrobe,
 					look great. You may also want to keep the weather/season in mind.</blockquote>
-				<ul class="actions vertical">
-					<li><a href="#pricing" class="button">Pricing</a></li>
-				</ul>
+					</br>
+					<h3>Investment</h3>
+					<p>$150 for a family up to 5 $10 for each added individual</p>
+						<ul class="actions vertical">
+							<li><a href="#moreinfo" class="button">Learn More</a></li>
+						</ul>
 			</div>
 			<div class="image">
 				<img src="images/spotlight05.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Real-estate/Corporate -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" id="realestate">
+				<h2>Real-estate/Corporate</h2>
+				<p>Smaller homes $100 (1100sqft or less) Medium sized homes $150 (1100sqft to 2200sqft) Larger homes $250 + (2200sqft+)</p>
+			</br>
+				<h3>Investment</h3>
+				<p>$150 for a family up to 5 $10 for each added individual</p>
+				<p>Digital photos on flash drive and through web. Packages are as follows:</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class="icon style2 major fa-diamond"></span>
+						<h4>Package 1</h4>
+						<ul>
+							<li>8 head shots</li>
+							<li>1 group photo</li>
+							<li>1 outside photo</li>
+						</ul>
+					</section>
+					<section>
+						<span class="icon style2 major fa-diamond"></span>
+						<h4>Package 2</h4>
+						<ul>
+							<li>8 head shots</li>
+							<li>1 group photo</li>
+							<li>1 outside photo</li>
+							<li>3 Inside photos</li>
+						</ul>
+						</ul>
+					</section>
+					<section>
+						<span class="icon style2 major fa-diamond"></span>
+						<h4>Package 3</h4>
+						<ul>
+							<li>8 head shots</li>
+							<li>2 group photos</li>
+							<li>2 Outside photo</li>
+							<li>5 Inside photos</li>
+							<li>Reenactment photos of “staff at work”</li>
+						</ul>
+					</section>
+				</div>
+
+					<ul class="actions vertical">
+						<li><a href="#moreinfo" class="button">Learn More</a></li>
+					</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight06.jpg" alt="" />
+			</div>
+		</section>
+
+
+
+		<!-- Events -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" id="events">
+				<h2>Events</h2>
+				<p>Quinceañeros, Sweet Sixteens, Birthdays, babyshowers, bridal showers and more! Don’t just keep that special occasion in your memory, call
+					Jmphotography and keep the memory alive with photographs that will last a lifetime.</p>
+				<h3>Investment</h3>
+				<p>Events with 50 guests or less $150 Events with up to 150 guests $200</p>
+					<ul class="actions vertical">
+						<li><a href="#moreinfo" class="button">Learn More</a></li>
+					</ul>
+			</div>
+			<div class="image">
+				<img src="images/spotlight07.jpg" alt="" />
 			</div>
 		</section>
 
@@ -145,7 +349,7 @@
 		<section class="wrapper style1 align-center">
 			<div class="inner" id="gallery">
 				<h2>Gallery</h2>
-			
+
 			</div>
 
 			<!-- Gallery -->
@@ -297,89 +501,54 @@
 			</div>
 		</section>
 
-
 		<section class="wrapper style1 align-center">
-			<div class="inner" id="contactus">
-				Call or email to schedule a session or to request more information.
-				<ul>
-					<li>Orlando, FL 32822</li>
-					<li>407.860.5545</li>
-					<li>jmphotographyorlando@gmail.com</li>
-				</ul>
-			</div>
-		</section>
+			<div class="inner medium" id="moreinfo">
+			<h2>Services Include</h2>
 
+			</p>All payments are due at service via cashier check, money order , cash or Chase quickpay</p>
 
-		<!-- Pricing -->
-		<section class="wrapper style1 align-center">
-			<div class="inner" id="pricing">
-				<h2>Corporate Photography Services</h2>
-				<p>Digital photos on flash drive and through web. Packages are as follows:</p>
 				<div class="items style1 medium onscroll-fade-in">
 					<section>
-						<span class="icon style2 major fa-diamond"></span>
-						<h3>Package 1</h3>
+						<span class="icon style2 major fa-picture-o"></span>
+						<h3>Media</h3>
 						<ul>
-							<li>8 head shots</li>
-							<li>1 group photo</li>
-							<li>1 outside photo</li>
+							<li>A choice of a DVD or flash drive with ALL 100+ high-resolution/quality images</li>
+							<li>An Adobe Lightroom web link with all images (able to download at your leisure)</li>
 						</ul>
 					</section>
 					<section>
-						<span class="icon style2 major fa-diamond"></span>
-						<h3>Package 2</h3>
+						<span class="icon style2 major fa-gavel"></span>
+						<h3>License</h3>
 						<ul>
-							<li>8 head shots</li>
-							<li>1 group photo</li>
-							<li>1 outside photo</li>
-							<li>3 Inside photos</li>
+							<li>All images are print released (meaning you can duplicate, edit and print as much and however you would like)</li>
 						</ul>
 						</ul>
 					</section>
 					<section>
-						<span class="icon style2 major fa-diamond"></span>
-						<h3>Package 3</h3>
+						<span class="icon style2 major fa-camera"></span>
+						<h3>Photoshoot</h3>
 						<ul>
-							<li>8 head shots</li>
-							<li>2 group photos</li>
-							<li>2 Outside photo</li>
-							<li>5 Inside photos</li>
-							<li>Reenactment photos of “staff at work”</li>
+							<li>Up to 2 hours of shooting</li>
+							<li>Unlimited outfit changes</li>
+							<li>A few free shots with add on subjects, Immediate family only.(Such as Mom, Dad and/or sibling)</li>
 						</ul>
 					</section>
 				</div>
+
 			</div>
 		</section>
 
 
-		<!-- About ME -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-			<div class="content" id="about">
-				<h2>About Me</h2>
-				<p>Hi! I’m super excited that you’re reading this right now because that means you have interest in the person behind the
-					lens, which is super important! Excellent photos are taken when there is a comfortable and natural atmosphere and this
-					is exactly what I aim for as your photographer. I like to get to know a little about my clients and build a connection
-					so I can capture your exact photography needs. The name given to me was Jessica Montes, but I go by Jess or Montes…
-					or whatever you would like me to go by! I was born a northerner from New Jersey but grown a Florida girl! I’m a nature
-					enthusiast, adventure seeker, musician, photographer and artist. I graduated from the University of Central Florida
-					in 2014 and currently working at a children’s hospital in central Florida. My passion in art and photography has been
-					there ever since I remember but the drive and motivation began when I purchased my first DSLR in 2010. I’ve been photographing
-					ever since. I have experience in pretty much everything but I specialize in family and children. If there is anything
-					else you would like to know about me feel free to contact me!</p>
-				<ul class="actions vertical">
-					<li><a href="#contact" class="button">Learn More</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="images/spotlight01.jpg" alt="" />
-			</div>
-		</section>
-
-
-		<!-- Get in Touch -->
 		<section class="wrapper style1 align-center">
-			<div class="inner medium">
+			<div class="inner medium" id="contact">
 				<h2>Get in touch</h2>
+				<p>Call or email to schedule a session or to request more information.</p>
+				<p>Please specify what type of shoot you are looking to have alongside any further questions or inquires</p>
+				</br>
+				<p>Orlando, FL 32822</p>
+				<p>407.860.5545</p>
+				<p>jmphotographyorlando@gmail.com</p>
+
 				<form method="post" action="assets\php\mail.php">
 					<div class="field half first">
 						<label for="name">Name</label>
@@ -397,8 +566,8 @@
 						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 					</ul>
 				</form>
-
 			</div>
+
 		</section>
 
 		<!-- Testimonials -->
@@ -409,9 +578,8 @@
 						<!-- Three columns of text below the carousel -->
 						<div class="row" id="Reviews">
 							<div class="col-lg-4">
-							<p>“Very patient and professional, love her work and techniques to capture memorable shots! JMphotography takes the exact pictures you've always wanted. Cannot wait for my next shoot! Awesome with kids!!!!!” –Noemi Martinez</p>
-							<p>
-							</p></div><!-- /.col-lg-4 -->
+							<p>Kristin Alvarado reviewed JMphotography Orlando — 5 star February 3 · Jessica was awesome, she made me feel very comfortable despite my naturally, awkward demeanor when it comes to pictures lol. Her ideas and angles were very creative and they came out beautiful! Also, it was freezing the day of, and she made sure I had her jacket on in between pictures, (lol) which just shows her kind-hearted personality. 	<p>
+							</div><!-- /.col-lg-4 -->
 							<div class="col-lg-4">
 								<p>“Love JMphotography. Super professional, reliable, and amazing quality pictures!! And you don't have to break the bank. Simply awesome!” –Nicole Marie Dominguez</p>
 							<p>
@@ -468,6 +636,9 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
