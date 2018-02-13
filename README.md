@@ -6,6 +6,11 @@ Photography Website
 Jmphotography_orlando.com
 
 
+## Change Request (2/12/2018)
+
+1. Remove contact information from website. Add the gmail contact info instead of submission form.
+
+
 ## Sprint 1 (Completed on 1/1/2017)
 
 1. I want the website to be phone friendly
